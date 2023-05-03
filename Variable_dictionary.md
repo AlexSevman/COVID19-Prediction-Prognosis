@@ -1,0 +1,47 @@
+# Dictionary
+
+Variable	Description
+- subject_id--> Subject ID
+- COVID --> COVID status (tested positive prior to enrollment or during hospitalization)    0 = negative    1= positive
+- Age cat--> Age category    1 = 20-34    2 = 36-49    3 = 50-64    4 = 65-79    5 = 80+ 
+- BMI cat--> Body mass index:    0 = <18.5 (underweight)    1 = 18.5-24.9 (normal)    2 = 25.0-29.9 (overweight)    3 = 30.0-39.9 (obese)    4 = >=40 (severely obese)    5 = Unknown
+- HEART--> Pre-existing heart disease – HEART - (coronary artery disease, congestive heart failure, valvular disease)    0 = No    1 = Yes
+- LUNG--> Pre-existing lung disease – LUNG - (asthma, COPD, requiring home O2, any chronic lung condition)    0 = No    1 = Yes    
+- KIDNEY--> Pre-existing kidney disease – KIDNEY - (chronic kidney disease, baseline creatinine >1.5, ESRD)    0 = No    1 = Yes    
+- DIABETES--> Pre-existing diabetes – DIABETES - (pre-diabetes, insulin and non-insulin dependent diabetes)    0 = No    1 = Yes    
+- HTN-->Pre-existing hypertension - HTN    0 = No    1 = Yes    
+- IMMUNO--> Pre-existing immunocompromised condition – IMMUNO (active cancer, chemotherapy, transplant, immunosuppressant agents, aspenic)    0 = No    1 = Yes    
+- Resp_Symp--> Respiratory symptoms – Symp_Resp (sore throat, congestion, productive or dry cough, shortness of breath or hypoxia, or chest pain)    0 = No    1 = Yes    
+- Fever_Sympt--> Febrile symptom
+- GI_Symp--> Any GI related symptoms at presentation (abdominal pain, nausea, vomiting, diarrhea)
+- D0_draw--> Study draw on Day 0   0 = No   1 = Yes
+- D3_draw--> Study draw in Day 3 window (study day 2 to study day 4)   0 = No   1 = Yes
+- D7_draw--> Study draw in Day 7 window (study day 5 to study day 9)   0 = No   1 = Yes
+- DE_draw--> Study draw for an event - event can include decompensation such as ICU admit or intubation, or extubation   0 = No   1 = Yes
+- Acuity 0--> Acuity score maximum for day 0 study window - highest Acuity within Day 0 window (enrollment plus 24 hours) :    1 = Death     2 = Intubated / ventilated      3 = Hospitalized, supplementary O2 required     4 = Hospitalized, no supplementary O2 required     5 = Discharged / Not hospitalized
+- Acuity 3--> Acuity score maximum for day 3 study window (study day 2 to study day 4):    1 = Death     2 = Intubated / ventilated      3 = Hospitalized, supplementary O2 required     4 = Hospitalized, no supplementary O2 required     5 = Discharged / Not hospitalized
+- Acuity 7--> Acuity score maximum for day 7 study window (study day 5 to study day 9):    1 = Death     2 = Intubated / ventilated      3 = Hospitalized, supplementary O2 required     4 = Hospitalized, no supplementary O2 required     5 = Discharged / Not hospitalized
+- Acuity 28--> Acuity score on day 28:   1 = Death     2 = Intubated / ventilated      3 = Hospitalized, supplementary O2 required     4 = Hospitalized, no supplementary O2 required     5 = Discharged / Not hospitalized
+- Acuity max--> Acuity max is the highest Acuity level between Day 0 -28     1 = Death within 28 days     2 = Intubated / ventilated, survived to 28 days     3 = Hospitalized, supplementary O2 required, survived to 28 days     4 = Hospitalized, no supplementary O2 required, survived to 28 days     5 = Discharged, was not admitted to hospital within 28 day window, survived
+- abs_neut_0_cat--> Absulute neutrophil count day 0 category:    1 = 0-0.99    2 = 1.0-3.99    3 = 4.0-7.99    4 = 8.0-11.99    5 = 12+
+- abs_lymph_0_cat--> Absolute lymphocyte count day 0 category:    1 = 0-0.49    2 = 0.50-0.99    3 = 1.00-1.49    4 = 1.50-1.99    5 = 2+    
+- abs_mono_0_cat--> Absolute monocyte day 0 category    1 = 0-0.24    2 = 0.25-0.49    3 = 0.50-0.74    4 = 0.75-0.99    5 = 1.0+
+- creat_0_cat--> Creatinine day 0 category    1 = 0-0.79    2 = 0.80-1.19    3 = 1.20-1.79    4 = 1.80-2.99    5 = 3+
+- crp_0_cat--> c-reactive protein day 0 category:    1 = 0-19.9    2 = 20-59.0    3 = 60-99.9    4 = 100-179    5 = 180+
+- ddimer_0_cat--> D-dimer  day 0 category:    1 = 0-499    2 = 500-999    3 = 1000-1999    4 = 2000-3999    5 = 4000+
+- ldh_0_cat--> Lactate dehydrogenase day 0 category:    1 = 0-200    2 = 200-299    3 = 300-399    4 = 400-499    5 = 500+
+- Trop_72h--> Cardiac event – Trop_72h - (hs-cTn =>100 within first 72 hours of presentation)    0 = No    1 = Yes    
+- abs_neut_3_cat--> Absulute neutrophil count day 3 category:    1 = 0-0.99    2 = 1.0-3.99    3 = 4.0-7.99    4 = 8.0-11.99    5 = 12+
+- abs_lymph_3_cat--> Absolute lymphocyte count day 3 category:    1 = 0-0.49    2 = 0.50-0.99    3 = 1.00-1.49    4 = 1.50-1.99    5 = 2+    
+- abs_mono_3_cat--> Absolute monocyte count day 3 category:    1 = 0-0.24    2 = 0.25-0.49    3 = 0.50-0.74    4 = 0.75-0.99    5 = 1.0+
+- creat_3_cat--> Creatinine day 3 category    1 = 0-0.79    2 = 0.80-1.19    3 = 1.20-1.79    4 = 1.80-2.99    5 = 3+
+- crp_3_cat--> c-reactive protein day 3 category:    1 = 0-19.9    2 = 20-59.0    3 = 60-99.9    4 = 100-179    5 = 180+
+- ddimer_3_cat--> D-dimer  day 3 category:    1 = 0-499    2 = 500-999    3 = 1000-1999    4 = 2000-3999    5 = 4000+
+- ldh_3_cat--> Lactate dehydrogenase day 3 category:    1 = 0-200    2 = 200-299    3 = 300-399    4 = 400-499    5 = 500+
+- abs_neut_7_cat--> Absulute neutrophil count day 7 category:    1 = 0-0.99    2 = 1.0-3.99    3 = 4.0-7.99    4 = 8.0-11.99    5 = 12+    
+- abs_lymph_7_cat--> Absolute lymphocyte count day 7 category:    1 = 0-0.49    2 = 0.50-0.99    3 = 1.00-1.49    4 = 1.50-1.99    5 = 2+    
+- abs_mono_7_cat--> Absolute monocyte count day 7 category:    1 = 0-0.24    2 = 0.25-0.49    3 = 0.50-0.74    4 = 0.75-0.99    5 = 1.0+
+- creat_7_cat--> Creatinine day 7 category    1 = 0-0.79    2 = 0.80-1.19    3 = 1.20-1.79    4 = 1.80-2.99    5 = 3+
+- crp_7_cat--> c-reactive protein day 7 category:    1 = 0-19.9    2 = 20-59.0    3 = 60-99.9    4 = 100-179    5 = 180+
+- ddimer_7_cat--> D-dimer  day 3 category:    1 = 0-499    2 = 500-999    3 = 1000-1999    4 = 2000-3999    5 = 4000+
+- ldh_7_cat--> 	Lactate dehydrogenase day 7 category:    1 = 0-200    2 = 200-299    3 = 300-399    4 = 400-499    5 = 500+
